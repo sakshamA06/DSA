@@ -1,0 +1,9 @@
+# Excluding compiled files but not source files
+#[0-9]*.*
+#![0-9]*.cpp
+*
+!*.cpp
+!*.md
+!*.gitignore
+!*/
+.vscode
