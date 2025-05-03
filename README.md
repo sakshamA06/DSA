@@ -4,6 +4,6 @@
 - [x] Step 1: Basics
 - [x] Step 2: Sorting
 - [ ] Step 3: Arrays
-	- [ ] Easy
+	- [x] Easy
 	- [ ] Medium
 	- [ ] Hard
