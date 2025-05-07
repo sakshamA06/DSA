@@ -78,7 +78,7 @@ int main(){
     // Start making subarrays from 0, like 0->0 then 0->1, 0->2 and so on till the end, keep adding subsequent indexes to get the total sum from start to i, and check if the sum is equal to K, if true update when the maxLen is greater than its previous value. After first iteration, change starting point to 1 so that sub arrays are 1->1, 1->2, and so on and keep increasing starting point until u reach the end
     // std::cout<<bf2(arr, K);
 
-    // Better Solution: 
+    // Better Solution: (Optimal Solution for array with positives and negatives)
     // TC: O(n * log n) for ordered map, O(n*2) for unordered map in worst case(many collisions) and O(n) for unordered map in best and average case
     // SC: O(n) -> n different prefix sum(worst case)
 
