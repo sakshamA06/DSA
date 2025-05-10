@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 int main(){
-    // Given an array of size n, find the second largest element
+    // Given an array of size n, check if its sorted.
     int n = 5;
     int arr[n] = {9, 10, 5, 4, 1, 2, 3, 4}; // return false
 

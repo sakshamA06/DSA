@@ -5,5 +5,5 @@
 - [x] Step 2: Sorting
 - [ ] Step 3: Arrays
 	- [x] Easy
-	- [ ] Medium
+	- [x] Medium
 	- [ ] Hard

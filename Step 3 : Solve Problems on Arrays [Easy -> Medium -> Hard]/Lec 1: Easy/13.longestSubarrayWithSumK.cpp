@@ -49,17 +49,17 @@ int better(std::vector<int> arr, long long K){
 }
 
 int optimal(std::vector<int> arr, long long K){
-    int i = 0;
-    int j = 0;
+    int i = 0; // start of window
+    int j = 0; // end of window
     int sum = arr[0];
     int maxLen = 0;
     while(j < arr.size()){
         while(i <= j && sum > K){
             sum -= arr[i];
-            i++;
+            i++; // move the start forward after removing it from sum
         }
         if(sum == K) maxLen = maxLen > j-i+1 ? maxLen : j-i+1;
-        j++;
+        j++; // move the end forward by default
         if(j < arr.size()) sum += arr[j];
     }
     return maxLen;
@@ -93,7 +93,7 @@ int main(){
     // std::cout<<better(arr, K);
 
     // Optimal Solution: O(2n) , O(1)
-    // Sliding window: A window has the subarray, enlarge it if the sum is smaller, shrink it if the sum is larger, and store the maximum length found when sum is equal to K. 
+    // Sliding window: A window has the subarray, enlarge it by moving the end forward if the sum is smaller, shrink it by moving the start forward if the sum is larger, and store the maximum length found when sum is equal to K. 
     std::cout<<optimal(arr, K);
     
 

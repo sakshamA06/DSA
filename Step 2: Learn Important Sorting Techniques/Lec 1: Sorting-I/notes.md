@@ -27,7 +27,7 @@ $O(n^2)$ for Best, Average and Worst case.
 >Inner Loop first runs for n times, then n-1 then n-2, ... , then 2 times
 >$n + n-1 + n-2 + ... + 2 \approx \frac{n(n+1)}{2} \approx \frac{n^2}{2} + \frac{n}{2} \approx n^2$
 
-**Space Complexity:** N/D
+**Space Complexity:** O(1)
 
 ## Bubble Sort
 The largest element is bubbled to the end one at a time.
