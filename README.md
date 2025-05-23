@@ -3,7 +3,11 @@
 ## Progress:
 - [x] Step 1: Basics
 - [x] Step 2: Sorting
-- [ ] Step 3: Arrays
+- [x] Step 3: Arrays
 	- [x] Easy
 	- [x] Medium
-	- [ ] Hard
+	- [x] Hard
+- [ ] Step 4: Binary Search
+	- [ ] On 1D Arrays
+	- [ ] On Answers
+	- [ ] On 2D Arrays
