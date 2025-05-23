@@ -20,9 +20,7 @@ int optimal(std::vector<int>& arr, int k){
     for(int i = 0; i < arr.size(); i++){
         pfixSum += arr[i];
         if(pfixSum == k) count++; // this
-        if(mpp.find(pfixSum-k) != mpp.end()){
-            count += mpp[pfixSum-k];
-        }
+        count += mpp[pfixSum-k];
         mpp[pfixSum]++;
     }
     return count;
@@ -38,7 +36,7 @@ int main(){
     // First is brute force of striver(O(n^3)) and second is his better solution.
     // std::cout<<bf(arr, 2);
 
-    // Optimal Solution:
+    // Optimal Solution: O(n) , O(n)
     // Same as number 13 in easy (and this is number 13 in medium lol). Using prefix sum.
     // pfixSum for any i stores sum of subarray [0,i], pfixSum-k is the value that some subarray [0,l] (0<=l<i) sum is equal to such that [l,i] is the subarray with sum of k
     // The key value pair map here is pfixSum and its frequency, since there can be multiple subarrays with the same sum which would mean leaving them from a larger subarray would result in same sum which we have to count differently.
