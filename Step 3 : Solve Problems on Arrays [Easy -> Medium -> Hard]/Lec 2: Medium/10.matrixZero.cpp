@@ -107,7 +107,7 @@ int main(){
     // Instead of keeping separate arrays, we embed it inside the matrix in mat[0][] and mat[][0], but the (0, 0) index will conflict so we let the mat[][0] as it is and make col0 variable.
     optimal(mat);
 
-    // My Solution: O(nm) + O(n+m) , O(n+m) -> number of zeroes
+    // My Solution: O(nm) + O((n+m) * number of zeroes(O(n+m) in worst case)) , O(n+m) -> number of zeroes
     // Iterate through the array and store the index of zeroes, then go through these indices and mark the rows and columns 0
     // mySol(mat);
 

@@ -89,13 +89,7 @@ int main(){
     // vector<vector<int>> res = better(arr, target);
 
     // Optimal Solution: O(n^3) , O(m)
-    // Now we will try to not use set to avoid duplication.
-    // We need a sorted array for this algorithm so sort it.
-    // Two pointer approach: One at very left, other at very right. These two represent arr[i] and arr[k]
-    // j will start at right after i (i.e. i+1), and we check if the sum is +ve or -ve, if +ve we need to reduce so we will leftshift k, if -ve we need to increase it so we rightshift j.
-    // After getting sum of 0, we just add (arr[i],arr[j],arr[k]) and move on.
-    // When j equals or crosses k, we restart everything by rightshifting i.
-    // Note while shifting any of the three pointers, we will always shift it until it encounters a new element than what it was pointing to before.
+    // Same as three sum, just introduce one more loop, basically running three sum repeatedly on other three elements after iterating first element one by one.
     vector<vector<int>> res = optimal(arr, target);
 
 

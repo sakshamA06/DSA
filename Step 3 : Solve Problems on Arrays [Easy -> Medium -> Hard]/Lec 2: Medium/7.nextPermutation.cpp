@@ -33,7 +33,7 @@ int main(){
     // Return the next array. If the given array is last, return the first.
     // This is extremely inefficient, TC and SC is very high, so won't implement.
 
-    // Optimal Solution:
+    // Optimal Solution: O(n), O(1)
     // The next permutation of descending array is its reverse or sorted version(both are equal)
     // Find from last, till where is a descending subarray, we name it dip where the first smaller element than the next is found such that arr[dip+1] to arr[n-1] is descending.
     // Swap arr[dip] with the next largest element in the descending portion, we can easily find this element by starting to look from last and picking the first element that is greater than arr[dip]. Since all the elements to the right of it would be smaller than arr[dip] and all the element to the left would only be more larger.

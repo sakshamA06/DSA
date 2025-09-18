@@ -48,8 +48,8 @@ int main(){
     //     for(int j = 0; j < n2; j++){
     //         if(arr1[i] == arr2[j]){
     //             bool exists = false;
-    //             for(int k = 0; k < i.size(); k++){
-    //                 if(arr1[i] == i[k]){
+    //             for(int k = 0; k < itn.size(); k++){
+    //                 if(arr1[i] == itn[k]){
     //                     exists = true;
     //                     break;
     //                 }

@@ -31,6 +31,7 @@ int main(){
             secondMax = max;
             max = arr[i];
         }
+        // if first element is max, then the above if will never run, so this else if condition is for that case
         else if(arr[i] < max && arr[i] > secondMax) secondMax = arr[i];
     }
 

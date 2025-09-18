@@ -19,7 +19,7 @@ Pick a pivot, place it in its correct position by moving the elements smaller th
 	1. One pointer starts at leftmost(i) and another starts at rightmost(j).
 	2. Keep moving the left pointer towards right as long as the elements are smaller than the pivot, stop when it encounters a larger element.
 	3. Same for right pointer moving left, it keeps going until it encounter a smaller element.
-	4. After both have stopped, they swap these elements, so that smaller element if at i and larger is at j.
+	4. After both have stopped, they swap these elements, so that smaller element is at i and larger is at j.
 	5. Keep going and at the end when j preceeds i, that means all the elements it encountered were larger, and all the elements i encountered were smaller.
 	6. j is the correct index of pivot, its also the partition index since this is the point where the split will happen.
 3. Now split the array(hypothetically) into two sub-arrays and sort them recursively using above steps.

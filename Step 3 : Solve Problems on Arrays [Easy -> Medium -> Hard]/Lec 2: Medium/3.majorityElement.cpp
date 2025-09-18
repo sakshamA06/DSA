@@ -29,7 +29,6 @@ int optimal(std::vector<int> arr){
     for(int i = 0; i < arr.size(); i++){
         if(count == 0){
             candidate = arr[i];
-            count++;
         }
         if(arr[i] == candidate) count++;
         else count--;
@@ -60,7 +59,7 @@ int main(){
     // Optimal Solution:
     // Moore's Voting algo
     // Pick an candidate(initially undefined for reasons explained later, candidate is just the term used for currently picked element), keep a count(does not represent frequency of candidate) and increment it whenever u see candidate, and decrement it whenever u see any other element.
-    // When count reaches 0, change the candidate to whatever element made it 0.
+    // When count reaches 0, change the candidate to whatever element is after the element that made it 0.
     // After iterating through the array, either candidate will be majority or there will be no majority.
     // Now not picking the first element to be candidate is simply for the case that array is empty, and so that the code is more robust.
     std::cout<<optimal(arr);

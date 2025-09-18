@@ -7,7 +7,7 @@ int bf1(std::vector<int> arr, int K){
         for(int j = 0; j <= arr.size()-i; j++){    
             int sum = 0;
             // sum the sub array
-            for(int k = 0+j; k < i+j; k++){
+            for(int k = j; k < i+j; k++){
                 sum += arr[k];
             }
             // return early if its hopeless i.e. the required sum is larger than the sum of the array
@@ -66,7 +66,7 @@ int optimal(std::vector<int> arr, long long K){
 }
 
 int main(){
-    // Given an array of positive numbers of size n, find the longest subarray with given sum K. Subarray is contiguous portion of the arra.
+    // Given an array of positive numbers of size n, find the longest subarray with given sum K. Subarray is contiguous portion of the array.
     std::vector<int> arr = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
     int K = 3; // return 3 as {1, 1, 1} is longest
 

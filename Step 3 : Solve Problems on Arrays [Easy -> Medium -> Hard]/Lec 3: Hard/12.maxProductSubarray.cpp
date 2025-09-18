@@ -9,6 +9,10 @@ long long optimal(vector<int>& arr){
     for(int i = 0; i < n; i++){
         if(prefix == 0) prefix = 1;
         if(suffix == 0) suffix = 1;
+
+
+
+        
         prefix *= (long long)arr[i];
         suffix *= (long long)arr[n-i-1];
         maximum = max(maximum, max(prefix, suffix));
