@@ -7,4 +7,4 @@
 - [ ] Step 4: Binary Search
 	- [x] On 1D Arrays
 	- [ ] On Answers
-	- [ ] On 2D Arrays
+	- [x] On 2D Arrays
