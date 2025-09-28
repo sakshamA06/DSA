@@ -8,3 +8,12 @@
 	- [x] On 1D Arrays
 	- [ ] On Answers
 	- [x] On 2D Arrays
+- [x] Step 5: Strings
+	- [x] Basic and Easy
+	- [x] Medium
+- [ ] Step 6: Linked List
+	- [ ] LL
+	- [ ] DLL
+	- [ ] Medium LL
+	- [ ] Medium DLL
+	- [ ] Hard LL
