@@ -21,7 +21,7 @@ int optimal(vector<int>& arr){
 
 int main(){
     // Given an array of unique neighbouring elements(i.e. arr[i] != arr[i+1] ∀ valid i), find the peak element.
-    // An element is peak if its greater than both of its neighbours, we can assume arr[-1] = arr[n] = -∞ so that for the extremes they can be peak just by being greater than thier one neighbour.
+    // An element is peak if its greater than both of its neighbours, we can assume arr[-1] = arr[n] = -∞ so that for the extremes they can be peak just by being greater than their one neighbour.
     vector<int> arr = {1,20,19,13,12,10,9,7};
 
     // Optimal Solution: O(log n) , O(1)

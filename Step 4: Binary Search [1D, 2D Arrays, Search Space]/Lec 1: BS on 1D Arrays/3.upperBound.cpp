@@ -17,6 +17,7 @@ int optimal(vector<int> arr, int x){
         }
     }
     return upper_bound;
+    // return low; // or you can just return low
 }
 
 int main(){

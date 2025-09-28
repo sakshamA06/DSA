@@ -43,7 +43,7 @@ int main(){
     // Notice that the loop will only exit when high < low, but inside the loop high is only updated inside the else statement, with high = mid-1
     // That means the loop will only exit when mid-1 < low(after high gets updated with mid-1)
     // But mid can never have a value strictly lesser than low, at minimum it will be equal to low.
-    // So the loop cant exit if mid == low+1, since even if high gets updated, it will only be equal to low, which keeps the loop running.
+    // So the loop cant exit if mid is low+1, since even if high gets updated, it will only be equal to low, which keeps the loop running.
     // All this is to say loop exits only when mid == low, i.e. high == mid-1 == low-1, so after the loop, high will always be exactly one lesser than low, it cant be any more lesser.
     // Also mid will only be equal to low if high == low+1, which means low and high are adjacent to each other. Now if low is pointing to the answer, when mid becomes low, it will return. If high has the answer then when mid becomes low, the condition mid*mid<n will be true and low will move to high position and next iteration will return answer.
     // But if at low it was not the sqrt but smth lesser than the sqrt then low will move forward and will point to high, then mid will be calulated to point to low, and if its square is greater then that means the last low was the answer. So when mid*mid > n, high = mid-1 will be executed and high will move to the previous low which had the answer.

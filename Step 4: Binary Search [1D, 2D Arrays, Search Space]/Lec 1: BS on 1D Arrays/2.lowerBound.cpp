@@ -18,11 +18,13 @@ int optimal(vector<int> arr, int x){
     }
     
     return lower_bound;
+    // return low; // or you can just return low
 }
 
 int main(){
     // Given a sorted array(may or may not be unique) and a number, return the lower bound of the number x.
     // Lower bound is the minimum index such that arr[index] >= number
+    // Another way to say it, whats the first element that is greater or equal to than the number, index of that first element is the lower bound of the number.
     vector<int> arr = {2, 3, 5, 8, 15, 19};
     int x = 8; // for x = 6,7,8 lower bound is 3, for x = 5 its 2
 
@@ -33,7 +35,6 @@ int main(){
     // Using Binary Search, if the mid is greater than or equal to the number then this mid is a potential lower bound, so we update lower_bound and look to the left for an even smaller possible lower_bound.
     cout<<optimal(arr, x);
     
-
     std::cout<<"\n\n";
     return 0;
 }
