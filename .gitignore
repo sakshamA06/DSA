@@ -7,4 +7,4 @@
 !*.gitignore
 !*/
 .vscode
-dispose.cpp
+dispose*.cpp
