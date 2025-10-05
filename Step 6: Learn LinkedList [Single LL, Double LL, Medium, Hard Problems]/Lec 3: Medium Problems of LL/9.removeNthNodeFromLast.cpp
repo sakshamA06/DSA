@@ -41,7 +41,6 @@ ListNode* optimal(ListNode* head, int n){
     rearguard->next = temp->next;
     delete temp;
     return head;
-    return head;
 }
 
 int main(){
