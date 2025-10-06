@@ -11,9 +11,13 @@
 - [x] Step 5: Strings
 	- [x] Basic and Easy
 	- [x] Medium
-- [ ] Step 6: Linked List
-	- [ ] LL
-	- [ ] DLL
-	- [ ] Medium LL
-	- [ ] Medium DLL
-	- [ ] Hard LL
+- [x] Step 6: Linked List
+	- [x] LL
+	- [x] DLL
+	- [x] Medium LL
+	- [x] Medium DLL
+	- [x] Hard LL
+- [ ] Step 7: Recursion
+	- [ ] Stronghold
+	- [ ] Subsequences Pattern
+	- [ ] Trying Out All Combos
